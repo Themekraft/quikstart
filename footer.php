@@ -79,7 +79,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<a href="#" class="navbar-brand">quikstart</a>
+					<a href="#" class="navbar-brand"><i class="fa fa-rocket"></i>&nbsp; quikstart</a>
 
 					<!-- The Footer Nav -->
 					<?php wp_nav_menu(
