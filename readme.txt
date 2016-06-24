@@ -2,7 +2,7 @@ Theme Name: quikstart
 Theme URI: http://themekraft.com
 Author: Konrad Sroka
 Author URI: http://konradsroka.com
-Description: A beautiful head start for custom WordPress theme development. Built by ThemeKraft.
+Description: A small hackable theme to jumpstart your custom theme development for WordPress. Another tool by ThemeKraft.
 Version: 0.1
 License: GNU General Public License v3.0 /
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
