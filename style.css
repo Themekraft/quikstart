@@ -428,7 +428,7 @@ display: block;
   float: none;
   top: 0;
   right: 0;
-	overflow: auto;
+	overflow: hidden;
 	height: 58px;
 	width: 100%;
 	-webkit-transition: -webkit-transform .25s ease-out;
