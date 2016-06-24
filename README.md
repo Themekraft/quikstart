@@ -1,2 +1,2 @@
 # quikstart
-A beautiful head start for any WordPress theme development. Built by ThemeKraft.
+A small hackable theme to jumpstart your custom theme development for WordPress. Another tool by ThemeKraft.
