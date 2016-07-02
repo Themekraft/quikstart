@@ -32,6 +32,12 @@ jQuery( document ).ready( function( jQuery ) {
       jQuery('#sitewrap').toggleClass("slidenav-open");
     });
 
+    // the sliding nav
+    jQuery('#sitewrap').click(function() {
+      jQuery('#topnav').removeClass("tf-open");
+      jQuery('#slidenav-wrap').removeClass("tf-open");
+      jQuery('#sitewrap').removeClass("slidenav-open");
+    });
 
     // Auto smooth scroll for href="#somethin"
     jQuery(function() {
