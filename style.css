@@ -418,80 +418,8 @@ display: block;
 	clear: both;
 }
 
-/* Mobile Nav Bar and Burger Icon */
-#tf-slide-nav {
-	background: #fff;
-	border-bottom: 1px solid #ddd;
-	box-shadow: 1px 0 3px rgba(0,0,0,0.08);
-  position: fixed;
-	z-index: 99999;
-  float: none;
-  top: 0;
-  right: 0;
-	overflow: hidden;
-	height: 58px;
-	width: 100%;
-	-webkit-transition: -webkit-transform .25s ease-out;
-	transition: transform .25s ease-out;
-}
-#tf-slide-nav .tk-main-areas {
-	display: none;
-}
-@media (min-width: 768px) {
-	#tf-slide-nav .tk-main-areas {
-		display: block;
-	}
-}
-#tf-slide-nav li a {
-	padding: 22px 20px;
-	font-size: 15px;
-	line-height: 1;
-	height: 58px;
-	font-weight: normal;
-	text-transform: capitalize;
-	color: inherit;
-	background: transparent;
-}
-#tf-slide-nav li a:hover,
-#tf-slide-nav li a:focus {
-	color: inherit;
-	background: #f4f4f4;
-}
-#tf-slide-nav li.active a,
-#tf-slide-nav li.active a:hover,
-#tf-slide-nav li.active a:focus {
-    background: #eee;
-}
-#tf-slide-nav.tf-open {
-	-webkit-transform: translateX(-230px);
-	-ms-transform: translateX(-230px);
-	transform: translateX(-230px);
-}
-@media (min-width: 492px) {
-	#tf-slide-nav.tf-open {
-		-webkit-transform: translateX(-260px);
-		-ms-transform: translateX(-260px);
-		transform: translateX(-260px);
-	}
-}
-.tk-cart-nav,
-.tk-cart-nav:hover {
-    padding: 12px 16px;
-    position: absolute;
-    top: 0;
-    height: 58px;
-    width: 58px;
-    text-align: center;
-    vertical-align: middle;
-    right: 66px;
-    color: inherit;
-    font-size: 24px;
-		cursor: pointer;
-}
-.tk-cart-nav:focus {
-		color: inherit;
-}
-/* The Burger Man */
+
+/* The Burger Icon */
 .tf-burger {
   position: absolute;
   right: 0;
@@ -597,32 +525,35 @@ display: block;
 	}
 }
 
-
 /* Header Top Nav */
 #topnav {
-  background: #fff;
+	height: 58px;
+	width: 100%;
+	background: #fff;
 	border-bottom: 1px solid #ddd;
 	box-shadow: 1px 0 3px rgba(0,0,0,0.08);
-  height: auto;
-  overflow: visible;
 	position: fixed;
-  top: 0;
-  width: 100%;
 	z-index: 99999;
-	transition: all 0.08s ease-out;
-	display: none;
+  float: none;
+  top: 0;
+  right: 0;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform .25s ease-out;
+	transition: transform .25s ease-out;
 }
 #topnav ul {
 	float: right;
 }
 #topnav li a {
-	padding: 28px 20px;
-	margin-right: 1px;
-	font-size: 15px;
+	padding: 24px 20px;
+	line-height: 1;
+	height: 58px;
 	font-weight: normal;
 	text-transform: capitalize;
 	color: inherit;
 	background: transparent;
+	margin-right: 1px;
+	font-size: 14px;
 }
 #topnav li a:hover,
 #topnav li a:focus {
@@ -644,7 +575,7 @@ display: block;
 	color: inherit;
 }
 #topnav .navbar-brand {
-  padding: 28px 20px 28px 0;
+	padding: 20px 20px 20px 0;
 }
 /*#topnav li a[title="Cart"]::before {
 	display: inline-block;
@@ -656,19 +587,57 @@ display: block;
 	content: "\f07a";
 	margin-right: 5px;
 }*/
+.tk-menu-group {
+	display: none;
+}
+#topnav.tf-open {
+	-webkit-transform: translateX(-230px);
+	-ms-transform: translateX(-230px);
+	transform: translateX(-230px);
+}
+@media (min-width: 492px) {
+	#topnav.tf-open {
+		-webkit-transform: translateX(-260px);
+		-ms-transform: translateX(-260px);
+		transform: translateX(-260px);
+	}
+}
+.tk-cart-nav,
+.tk-cart-nav:hover {
+    padding: 12px 16px;
+    position: absolute;
+    top: 0;
+    height: 58px;
+    width: 58px;
+    text-align: center;
+    vertical-align: middle;
+    right: 66px;
+    color: inherit;
+    font-size: 24px;
+		cursor: pointer;
+}
+.tk-cart-nav:focus {
+		color: inherit;
+}
 
 @media (min-width: 992px) {
 	#topnav {
-		display: block !important;
+		height: 72px;
+	}
+	.tk-menu-group {
+		display: block;
+	}
+	.tk-cart-nav {
+		display: none;
 	}
 	#topnav .navbar-brand {
 		padding: 28px 25px 28px 0;
 	}
 	#topnav li a {
 		padding: 28px 25px;
+		height: 72px;
 	}
 }
-
 
 /* Slide Nav & Site Wrap */
 #slidenav-wrap {
@@ -765,13 +734,6 @@ display: block;
 	}
 }
 
-/* Header */
-#masthead {
-  overflow: auto;
-  background: transparent;
-  width: 100%;
-}
-
 /* Main Content */
 #mainwrap {
 	padding-top: 0;
@@ -781,7 +743,7 @@ display: block;
 
 @media (min-width: 992px) {
 	#mainwrap {
-		margin-top: 76px;
+		margin-top: 72px;
 	}
 }
 

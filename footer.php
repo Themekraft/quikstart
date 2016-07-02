@@ -79,7 +79,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
-					<a href="#" class="navbar-brand"><i class="fa fa-rocket"></i>&nbsp; quikstart</a>
+
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<?php echo get_bloginfo( 'name', 'display' ); ?>
+					</a>
 
 					<!-- The Footer Nav -->
 					<?php wp_nav_menu(

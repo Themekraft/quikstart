@@ -20,17 +20,18 @@ jQuery( document ).ready( function( jQuery ) {
 
     // the burger toggle
     jQuery('.tf-burger').click(function() {
-      jQuery('#tf-slide-nav').toggleClass("tf-open");
+      jQuery('#topnav').toggleClass("tf-open");
       jQuery('#slidenav-wrap').toggleClass("tf-open");
       jQuery('#sitewrap').toggleClass("slidenav-open");
     });
 
     // the sliding nav
     jQuery('#slidenav-wrap a').click(function() {
-      jQuery('#tf-slide-nav').toggleClass("tf-open");
+      jQuery('#topnav').toggleClass("tf-open");
       jQuery('#slidenav-wrap').toggleClass("tf-open");
       jQuery('#sitewrap').toggleClass("slidenav-open");
     });
+
 
     // Auto smooth scroll for href="#somethin"
     jQuery(function() {
@@ -40,13 +41,13 @@ jQuery( document ).ready( function( jQuery ) {
             var target = jQuery(this.hash);
             target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
             var wsize = jQuery(document).width();
-            if ((target.length) && (wsize >= 1200)) {
+            if ((target.length) && (wsize >= 992)) {
               jQuery('html,body').delay(220).animate({
-                scrollTop: target.offset().top -76
+                scrollTop: target.offset().top -72
               }, 260);
               return false;
             }
-            if ((target.length) && (wsize < 1200)) {
+            if ((target.length) && (wsize < 992)) {
               jQuery('html,body').delay(220).animate({
                 scrollTop: target.offset().top -58
               }, 260);

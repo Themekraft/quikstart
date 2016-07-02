@@ -46,75 +46,44 @@
 
 </div>
 
-<div id="tf-slide-nav">
-
+<header id="topnav">
 	<div class="container nopad">
 		<div class="row">
 			<div class="col-xs-12">
 
 				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-					<i class="fa fa-rocket"></i>&nbsp; quikstart
+					<?php echo get_bloginfo( 'name', 'display' ); ?>
 				</a>
 
-				<!-- <ul class="tk-main-areas nav navbar-nav">
-					<li id="" class="<?php if( is_page_template('themes-plugins.php') ) { echo 'active current-menu-item'; } ?>"><a href="<?php echo home_url(); ?>/products">Themes &amp; Plugins</a></li>
-					<li id="" class="<?php if( is_page_template('buddyforms.php') ) { echo 'active current-menu-item'; } ?>"><a href="<?php echo home_url(); ?>/buddyforms">BuddyForms</a></li>
-					<li id="" class="<?php if( is_page_template('custom-work.php') ) { echo 'active current-menu-item'; } ?>"><a href="<?php echo home_url(); ?>/wordpress-custom-development-design">Custom Work</a></li>
-				</ul> -->
+				<div class="tk-menu-group">
 
-			</div>
-		</div>
-	</div>
-
-	<a class="tk-cart-nav" href="/checkout/">
-			<i class="fa fa-shopping-cart"></i>
-	</a>
-	<a class="tf-burger">
-			<span></span>
-	</a>
-
-
-</div>
-
-<div id="sitewrap">
-
-<header id="masthead" class="site-header">
-
-
-	<div id="topnav">
-		<div class="container nopad">
-			<div class="row">
-				<div class="col-xs-12">
-
-					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<i class="fa fa-rocket"></i>&nbsp; quikstart
-					</a>
-
-					<div class="tk-menu-group">
-
-						<!-- The Primary Nav - Top Nav -->
-						<?php wp_nav_menu(
-							array(
-								'theme_location' 	=> 'primary',
-								'depth'             => 2,
-								'container'         => 'div',
-								'container_class'   => '',
-								'menu_class' 		=> 'nav navbar-nav',
-								'fallback_cb' 		=> 'wp_bootstrap_navwalker::fallback',
-								'menu_id'			=> 'main-menu',
-								'walker' 			=> new wp_bootstrap_navwalker()
-							)
-						); ?>
-
-					</div>
+					<!-- The Primary Nav - Top Nav -->
+					<?php wp_nav_menu(
+						array(
+							'theme_location' 	=> 'primary',
+							'depth'             => 2,
+							'container'         => 'div',
+							'container_class'   => '',
+							'menu_class' 		=> 'nav navbar-nav',
+							'fallback_cb' 		=> 'wp_bootstrap_navwalker::fallback',
+							'menu_id'			=> 'main-menu',
+							'walker' 			=> new wp_bootstrap_navwalker()
+						)
+					); ?>
 
 				</div>
+
 			</div>
 		</div>
 	</div>
 
-</header><!-- #masthead -->
+	<a class="tk-cart-nav" href="/checkout/"><i class="fa fa-shopping-cart"></i></a>
+	<a class="tf-burger"><span></span></a>
+
+</header>
 
 <?php do_action( 'tk_after_header' ); ?>
 
-<div id="mainwrap">
+<div id="sitewrap">
+
+	<div id="mainwrap">
