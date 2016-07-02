@@ -591,16 +591,9 @@ display: block;
 	display: none;
 }
 #topnav.tf-open {
-	-webkit-transform: translateX(-230px);
-	-ms-transform: translateX(-230px);
-	transform: translateX(-230px);
-}
-@media (min-width: 492px) {
-	#topnav.tf-open {
-		-webkit-transform: translateX(-260px);
-		-ms-transform: translateX(-260px);
-		transform: translateX(-260px);
-	}
+	-webkit-transform: translateX(-256px);
+	-ms-transform: translateX(-256px);
+	transform: translateX(-256px);
 }
 .tk-cart-nav,
 .tk-cart-nav:hover {
@@ -644,7 +637,7 @@ display: block;
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 230px;
+	width: 256px;
 	height: 100%;
 	background: #282828;
 	z-index: 99;
@@ -670,17 +663,17 @@ display: block;
 	padding: 17px 20px;
 	border-bottom: 1px solid #222;
 	border-top: 1px solid #2f2f2f;
-	font-size: 15px;
+	font-size: 14px;
 }
+/* for Font Awesome icons in sliding nav
 #slidenav-wrap .nav li a::before {
-	/* font awesome styles */
 	display: inline-block;
 	font: normal normal normal 14px/1 FontAwesome;
 	font-size: inherit;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
+}*/
 #slidenav-wrap .nav li a:hover,
 #slidenav-wrap .nav li a:focus {
 	color: #dfdfdf;
@@ -701,38 +694,18 @@ display: block;
 	overflow: auto;
 }
 #sitewrap.slidenav-open {
-	-webkit-transform: translateX(-230px);
-	-ms-transform: translateX(-230px);
-	transform: translateX(-230px);
+	-webkit-transform: translateX(-256px);
+	-ms-transform: translateX(-256px);
+	transform: translateX(-256px);
 	width: 100%;
 	overflow: hidden;
 }
-@media (min-width: 492px) {
-		#slidenav-wrap {
-			width: 260px;
-			-webkit-transform: translateX(260px);
-		  -ms-transform: translateX(260px);
-		  transform: translateX(260px);
-		}
-
-		#sitewrap.slidenav-open {
-			-webkit-transform: translateX(-260px);
-			-ms-transform: translateX(-260px);
-			transform: translateX(-260px);
-		}
-}
-.tf-open#slidenav-wrap {
+#slidenav-wrap.tf-open {
 	-webkit-transform: translateX(0);
 	-ms-transform: translateX(0);
 	transform: translateX(0);
 }
-@media (min-width: 992px) {
-	#sitewrap.slidenav-open {
-		-webkit-transform: translateX(-260px);
-		-ms-transform: translateX(-260px);
-		transform: translateX(-260px);
-	}
-}
+
 
 /* Main Content */
 #mainwrap {
