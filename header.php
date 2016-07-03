@@ -80,7 +80,6 @@
 
 	<div class="tk-icon-nav">
 		<a class="tk-cart-nav" href="#"><i class="fa fa-shopping-cart"></i></a>
-		<a class="tk-profile-nav" href="#"><i class="fa fa-user"></i></a>
 	</div>
 
 	<a class="tf-burger"><span></span></a>
