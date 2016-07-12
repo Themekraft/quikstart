@@ -8,13 +8,14 @@
  */
 ?>
 
-<?php if (!is_front_page()) { ?>
+<?php // add the following line and line 18 if you have a front-page.php 
+			// if (!is_front_page()) { ?>
 
 			</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
 		</div><!-- close .row -->
 	</div><!-- close .container -->
 
-<?php } ?>
+<?php // } ?>
 
 </div> <!-- close #mainwrap -->
 
